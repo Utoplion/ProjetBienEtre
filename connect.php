@@ -9,7 +9,7 @@ session_start();
   }
 
   $email = htmlspecialchars($_POST['mail']);
-  $mdp = $_POST['mdp'];
+  $mdp = htmlspecialchars($_POST['mdp']);
   $valider = $_POST['submit'];
 
   if(isset($valider)){
